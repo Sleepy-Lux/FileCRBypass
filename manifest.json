@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "FileCRBypass",
+    "version": "1.0.0",
+    "description": "⭐ Bypass FileCR's Stupid Restrictions Easily!",
+    "icons": {
+        "128": "icon.png"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "icon.png"
+    },
+    "content_scripts": [
+        {
+            "js": ["filecr.js"],
+            "matches": [
+                "https://filecr.com/*"
+            ]
+        }
+    ]
+}
